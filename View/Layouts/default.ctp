@@ -17,13 +17,29 @@
         <![endif]-->
         <meta name="keywords" content="youtube,ユーチューブ,movie,動画,download,ダウンロード,export,エクスポート" />
         <meta name="description" content="youtube(youtube.com)の動画をダウンロードできるサービスです。" />
-        <title>Export Youtube</title>
+        <title><?php echo $title_for_layout ?> - Export Youtube</title>
+        <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-41583079-2', 'export-youtube.xyz');
+        ga('send', 'pageview');
+        </script>
         <?php
         echo $this->Html->meta('icon');
         echo $this->fetch('meta');
         echo $this->fetch('css');
         echo $this->fetch('script');
         ?>
+        <style>
+        footer div.container {
+            margin-top: 1em;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+        </style>
     </head>
     <body>
         <nav class="navbar navbar-default container">
@@ -64,19 +80,16 @@
             <?php echo $this->fetch('content'); ?>
         </div>
 
-        <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-41583079-2', 'export-youtube.xyz');
-        ga('send', 'pageview');
-        </script>
+        <footer id="footer">
+            <div class="container">
+                <p>Copyright © 2014-2014 genzouw All Rights Reserved.</p>
+                <p>( twitter:<a href="https://twitter.com/genzouw">@genzouw</a> , facebook:<a href="https://www.facebook.com/genzouw">genzouw</a>, mailto:<a href="mailto:genzouw@gmail.com">genzouw@gmail.com</a> )</p>
+            </div>
+        </footer>
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" async defer></script>
         <!-- Latest compiled and minified JavaScript -->
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js" async defer></script>
     </body>
 </html>

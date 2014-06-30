@@ -34,6 +34,8 @@ class PagesController extends AppController
 
     public function index()
     {
+        $this->set('title_for_layout', 'Top');
+
         if ($this->request->is('post') && isset($this->request->data['url'])) {
             $url = $this->request->data['url'];
             $shellToGetFileName = sprintf(
