@@ -26,6 +26,7 @@
 
         ga('create', 'UA-41583079-2', 'auto');
         ga('send', 'pageview');
+
         </script>
         <?php
         echo $this->Html->meta('icon');
