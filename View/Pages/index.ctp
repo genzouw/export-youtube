@@ -91,7 +91,7 @@
 
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
-            <p>当サイトのULR入力欄にペーストし、ボタンを押します。</p>
+            <p>当サイトのURL入力欄にペーストし、ボタンを押します。</p>
             </div>
         </div>
         
