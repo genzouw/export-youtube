@@ -34,9 +34,17 @@
         echo $this->Html->meta('icon');
         echo $this->fetch('meta');
         echo $this->fetch('css');
-        echo $this->fetch('script');
         ?>
         <style>
+        h2 {
+            margin-top: 0.1em;
+        }
+        .nav-pills>li>a {
+            border-bottom: 1px solid lightgray;
+        }
+        .content-box {
+            background-color: #f9f9f9;
+        }
         footer div.container {
             margin-top: 1em;
             background-color: #f5f5f5;
@@ -94,5 +102,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" async defer></script>
         <!-- Latest compiled and minified JavaScript -->
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js" async defer></script>
+        <?php
+        echo $this->fetch('script');
+        ?>
     </body>
 </html>
