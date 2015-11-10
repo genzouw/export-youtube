@@ -39,7 +39,7 @@ class PagesController extends AppController
         if ($this->request->is('post') && isset($this->request->data['url'])) {
             $url = $this->request->data['url'];
             $shellToGetFileName = sprintf(
-                "cd downloads/; /usr/bin/youtube-dl --get-filename '%s'",
+                "/usr/bin/youtube-dl --get-filename -f mp4 '%s'",
                 $url
             );
 
@@ -48,14 +48,15 @@ class PagesController extends AppController
                 return;
             }
 
-            $shell = sprintf(
-                "cd downloads/; /usr/bin/youtube-dl '%s'",
-                $url
-            );
-            exec($shell, $output, $returnValue);
+            if (!file_exists(APP . "webroot/downloads/{$fileName}")) {
+                $shell = sprintf(
+                    "cd ".APP."webroot/downloads/; /usr/bin/youtube-dl -f mp4 {$url}"
+                );
+                exec($shell, $output, $returnValue);
 
-            if ($returnValue !== 0) {
-                return;
+                if ($returnValue !== 0) {
+                    return;
+                }
             }
 
             $this->set('exportedFileName', $fileName);

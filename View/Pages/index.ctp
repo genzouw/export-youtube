@@ -49,7 +49,7 @@
                             <div class="col-sm-12">
                             <?php if (isset($exportedFileName)) { ?>
                                 <div class="alert alert-success">
-                                    <a href="/downloads/<?php echo h($exportedFileName); ?>" style="font-size: 150%; font-weight: bold;">
+                                    <a href="/downloads/<?php echo h($exportedFileName); ?>" style="font-size: 150%; font-weight: bold;" target="_blank">
                                         <span class="glyphicon glyphicon-download-alt"></span>
                                         こちらのリンクを右クリックし「リンク先を保存」してください。
                                     </a>
@@ -75,7 +75,7 @@
 
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
-            <img class="img-thumbnail" src="http://export-youtube.xyz/img/001.png" style="border: 5px solid gray;">
+            <img class="img-thumbnail" src="/img/001.png" style="border: 5px solid gray;">
             </div>
         </div>
         
@@ -83,7 +83,7 @@
 
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
-            <img class="img-thumbnail" src="http://export-youtube.xyz/img/002.png" style="border: 5px solid gray;">
+            <img class="img-thumbnail" src="/img/002.png" style="border: 5px solid gray;">
             </div>
         </div>
         
@@ -100,7 +100,7 @@
 
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
-            <img class="img-thumbnail" src="http://export-youtube.xyz/img/003.png" style="border: 5px solid gray;">
+            <img class="img-thumbnail" src="/img/003.png" style="border: 5px solid gray;">
             </div>
         </div>
 
