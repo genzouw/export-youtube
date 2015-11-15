@@ -2,6 +2,15 @@
             <div class="col-sm-3">
                 <div class="panel panel-default">
                     <div class="panel-heading">
+                        Other Service
+                    </div>
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="http://friends-map.genzouw.com">Friends Map</a></li>
+                    </ul>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
                         Developer
                     </div>
                     <ul class="nav nav-pills nav-stacked">
