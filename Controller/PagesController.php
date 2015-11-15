@@ -50,7 +50,7 @@ class PagesController extends AppController
 
             if (!file_exists(APP . "webroot/downloads/{$fileName}")) {
                 $shell = sprintf(
-                    "cd ".APP."webroot/downloads/; /usr/bin/youtube-dl -f mp4 {$url}; touch {$fileName};"
+                    "cd ".APP."webroot/downloads/; /usr/bin/youtube-dl -f mp4 '{$url}'; touch '{$fileName}';"
                 );
                 exec($shell, $output, $returnValue);
 
