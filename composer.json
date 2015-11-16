@@ -1,0 +1,16 @@
+{
+    "name": "root/cakephp",
+    "require": {
+        "cakephp/cakephp": "2.7.*"
+    },
+    "require-dev": {
+        "piece/stagehand-testrunner": "4.1.*",
+        "phpunit/phpunit": "*"
+    },
+    "authors": [
+        {
+            "name": "genzouw",
+            "email": "genzouw@gmail.com"
+        }
+    ]
+}
