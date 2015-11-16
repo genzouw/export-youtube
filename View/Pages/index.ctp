@@ -73,7 +73,7 @@
                                     <div class="col-sm-12">
                                     <?php if (isset($exportedFileName)) { ?>
                                         <div class="alert alert-success">
-                                            <a href="/downloads/<?php echo h($exportedFileName); ?>" style="font-size: 150%; font-weight: bold;" target="_blank">
+                                            <a href="/downloads/<?php echo rawurlencode($exportedFileName); ?>" style="font-size: 150%; font-weight: bold;" target="_blank">
                                                 <span class="glyphicon glyphicon-download-alt"></span>
                                                 こちらのリンクを右クリックし「リンク先を保存」してください。
                                             </a>
