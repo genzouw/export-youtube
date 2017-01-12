@@ -42,8 +42,7 @@
                                     // 'youtube',
                                     '',
                                     array(
-                                        'controller' => 'pages',
-                                        'action' => 'index',
+                                        'url' => '/',
                                         // 'enctype' => 'multipart/form-data',
                                         'inputDefaults' => array(
                                             'div' => false,
@@ -102,7 +101,7 @@
                     <img class="img-thumbnail" src="/img/001.png" style="border: 5px solid gray;">
                     </div>
                 </div>
-                
+
                 <h3>2.URLをコピーします。</h3>
 
                 <div class="row">
@@ -110,7 +109,7 @@
                     <img class="img-thumbnail" src="/img/002.png" style="border: 5px solid gray;">
                     </div>
                 </div>
-                
+
                 <h3>3.URLを入力します。</h3>
 
                 <div class="row">
@@ -118,7 +117,7 @@
                     <p>当サイトのURL入力欄にペーストし、ボタンを押します。</p>
                     </div>
                 </div>
-                
+
 
                 <h3>4.動画を保存します。</h3>
 
@@ -128,7 +127,6 @@
                     </div>
                 </div>
 
-                        
+
             </div>
         </div>
-
