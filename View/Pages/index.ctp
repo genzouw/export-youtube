@@ -6,6 +6,7 @@
                     </div>
                     <ul class="nav nav-pills nav-stacked">
                         <li><a href="http://friends-map.genzouw.com">Friends Map</a></li>
+                        <li><a href="http://image.genzouw.com">イメージアップローダー</a></li>
                     </ul>
                 </div>
 
