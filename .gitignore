@@ -4,3 +4,4 @@ tmp/logs/error.log
 webroot/downloads
 .vagrant/
 vendor/
+tmp/*
