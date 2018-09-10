@@ -5,8 +5,8 @@
                         Other Service
                     </div>
                     <ul class="nav nav-pills nav-stacked">
-                        <li><a href="http://friends-map.genzouw.com">Friends Map</a></li>
-                        <li><a href="http://image.genzouw.com">イメージアップローダー</a></li>
+                        <li><a href="//friends-map.genzouw.com">Friends Map</a></li>
+                        <li><a href="//image.genzouw.com">イメージアップローダー</a></li>
                     </ul>
                 </div>
 
@@ -18,14 +18,14 @@
                         <li><a href="https://twitter.com/genzouw">@genzouw | Twitter</a></li>
                         <li><a href="https://github.com/genzouw">genzouw | GitHub</a></li>
                         <li><a href="https://www.facebook.com/genzouw">genzouw | Facebook</a></li>
-                        <li><a href="http://genzouw.hatenablog.com">ゲンゾウ用ポストイット</a></li>
+                        <li><a href="//genzouw.hatenablog.com">ゲンゾウ用ポストイット</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-sm-9 content-box">
                 <h2>Top</h2>
 
-                <p><a href="http://youtube.com">Youtube</a>から、気に入った動画をダウンロードできます。</p>
+                <p><a href="//youtube.com">Youtube</a>から、気に入った動画をダウンロードできます。</p>
                 <p>
                     <ol>
                         <li>スマートフォンやタブレットに保存し、オフラインで閲覧</li>

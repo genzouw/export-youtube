@@ -78,7 +78,7 @@
                     //<![CDATA[
                     (function(d){
                         if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_0750bcd7e07536b67d248e57940857a2)=='undefined'){
-                            document.write("<sc"+"ript type='text\/javascript' src='http:\/\/omt.shinobi.jp\/b\/0750bcd7e07536b67d248e57940857a2'><\/sc"+"ript>");
+                            document.write("<sc"+"ript type='text\/javascript' src='\/\/omt.shinobi.jp\/b\/0750bcd7e07536b67d248e57940857a2'><\/sc"+"ript>");
                         }else{
                             window.NINJA_CO_JP_ONETAG_BUTTON_0750bcd7e07536b67d248e57940857a2.ONETAGButton_Load();}
                     })(document);
@@ -86,7 +86,7 @@
                     </script><span class="ninja_onebutton_hidden" style="display:none;"></span><span style="display:none;" class="ninja_onebutton_hidden"></span>
                 </div>
             </div>
-            
+
             <?php echo $this->Session->flash(); ?>
             <?php echo $this->fetch('content'); ?>
         </div>
