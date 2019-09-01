@@ -31,6 +31,8 @@ class PagesController extends AppController
 {
     public $uses = array();
 
+    private $youtubeDlCommandPath = '/usr/bin/youtube-dl';
+
     public function index()
     {
         $this->set('title_for_layout', 'Top');
@@ -38,7 +40,7 @@ class PagesController extends AppController
         if ($this->request->is('post') && isset($this->request->data['url'])) {
             $url = $this->request->data['url'];
             $shellToGetFileName = sprintf(
-                "LANG=ja_JP.UTF-8 /usr/bin/youtube-dl --get-filename -f mp4 '%s'",
+                "LANG=ja_JP.UTF-8 {$this->youtubeDlCommandPath} --get-filename -f mp4 '%s'",
                 $url
             );
 
@@ -49,7 +51,7 @@ class PagesController extends AppController
 
             if (!file_exists(APP . "webroot/downloads/{$fileName}")) {
                 $shell = sprintf(
-                    "cd ".APP."webroot/downloads/; LANG=ja_JP.UTF-8 /usr/bin/youtube-dl -f mp4 '{$url}'; touch '{$fileName}';"
+                    'cd ' . APP . "webroot/downloads/; LANG=ja_JP.UTF-8 {$this->youtubeDlCommandPath} -f mp4 '{$url}'; touch '{$fileName}';"
                 );
                 exec($shell, $output, $returnValue);
 
