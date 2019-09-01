@@ -5,8 +5,7 @@
                         Other Service
                     </div>
                     <ul class="nav nav-pills nav-stacked">
-                        <li><a href="//friends-map.genzouw.com">Friends Map</a></li>
-                        <li><a href="//image.genzouw.com">イメージアップローダー</a></li>
+                        <li><a href="https://hyakuninissyu.genzouw.com">ひゃくにんいっしゅをおぼえよう</a></li>
                     </ul>
                 </div>
 
@@ -18,7 +17,7 @@
                         <li><a href="https://twitter.com/genzouw">@genzouw | Twitter</a></li>
                         <li><a href="https://github.com/genzouw">genzouw | GitHub</a></li>
                         <li><a href="https://www.facebook.com/genzouw">genzouw | Facebook</a></li>
-                        <li><a href="//genzouw.hatenablog.com">ゲンゾウ用ポストイット</a></li>
+                        <li><a href="https://genzouw.com">ゲンゾウ用ポストイット</a></li>
                     </ul>
                 </div>
             </div>

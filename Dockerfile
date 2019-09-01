@@ -1,5 +1,7 @@
 FROM php:7.3-apache
 
+LABEL maintainer "genzouw <genzouw@gmail.com>"
+
 RUN docker-php-ext-install pdo pdo_mysql mbstring
 
 RUN a2enmod rewrite \
@@ -20,5 +22,3 @@ ENV APACHE_DOCUMENT_ROOT /var/www/webroot
 
 RUN sed -ri -e "s!/var/www/html!${APACHE_DOCUMENT_ROOT}!g" /etc/apache2/sites-available/*.conf \
   && sed -ri -e "s!/var/www/!${APACHE_DOCUMENT_ROOT}!g" /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
-
-LABEL maintainer "genzouw <genzouw@gmail.com>"
