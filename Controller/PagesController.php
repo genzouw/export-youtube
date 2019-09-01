@@ -31,7 +31,7 @@ class PagesController extends AppController
 {
     public $uses = array();
 
-    private $youtubeDlCommandPath = '/usr/bin/youtube-dl';
+    private $youtubeDlCommandPath = 'youtube-dl';
 
     public function index()
     {

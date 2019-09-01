@@ -1,0 +1,9 @@
+version: "2"
+services:
+  web:
+    build:
+      context: .
+    volumes:
+      - $PWD:/var/www
+    ports:
+      - 10000:80
