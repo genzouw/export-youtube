@@ -7,3 +7,4 @@ services:
       - $PWD:/var/www
     ports:
       - 10000:80
+    restart: always

@@ -1,7 +1,7 @@
 tmp/cache/persistent/*
 webroot/php_errors.log
 tmp/logs/error.log
-webroot/downloads
+webroot/downloads/
 .vagrant/
 vendor/
-tmp/*
+tmp/
