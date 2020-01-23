@@ -74,21 +74,21 @@ class DATABASE_CONFIG {
 	public $default = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
-		'host' => 'localhost',
-		'login' => 'export_youtube',
-		'password' => 'export_youtube',
-		'database' => 'export_youtube',
+		'host' => 'db',
+		'login' => 'export_youtube_user',
+		'password' => 'export_youtube_pass',
+		'database' => 'export_youtube_db',
 		'prefix' => '',
-		//'encoding' => 'utf8',
+        'encoding' => 'utf8',
 	);
 
 	public $test = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
-		'host' => 'localhost',
-		'login' => 'user',
-		'password' => 'password',
-		'database' => 'test_database_name',
+		'host' => 'db',
+		'login' => 'export_youtube_user',
+		'password' => 'export_youtube_pass',
+		'database' => 'export_youtube_db',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);

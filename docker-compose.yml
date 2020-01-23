@@ -5,6 +5,7 @@ services:
       context: .
     volumes:
       - $PWD:/var/www
+    working_dir: /var/www
     ports:
       - 10000:80
     restart: always
@@ -16,3 +17,15 @@ services:
       - $PWD:/var/www
     working_dir: /var/www
     command: composer install; chmod -R 777 ./tmp; install -m 777 ./webroot/downloads
+  db:
+    image: mysql:5.7.29
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=export_youtube_db
+      - MYSQL_USER=export_youtube_user
+      - MYSQL_PASSWORD=export_youtube_pass
+    volumes:
+      - "mysql-database:/var/lib/mysql"
+volumes:
+  mysql-database:
+    driver: local
