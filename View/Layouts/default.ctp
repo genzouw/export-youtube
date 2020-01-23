@@ -23,7 +23,7 @@
         <meta property="og:title" content="Export Youtube" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://export-youtube.genzouw.com" />
-        <meta property="og:image" content="https://export-youtube.genzouw.com/img/thumbnail.jpg" />
+        <meta property="og:image" content="https://export-youtube.genzouw.com/img/thumbnail.png" />
         <meta property="og:description" content="youtube(https://youtube.com)の動画をダウンロードできるサービスです。"/>
         <meta property="og:locale" content="ja_JP" />
         <script>
