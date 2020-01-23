@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,8 +17,15 @@
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
         <meta name="keywords" content="youtube,ユーチューブ,movie,動画,download,ダウンロード,export,エクスポート" />
-        <meta name="description" content="youtube(youtube.com)の動画をダウンロードできるサービスです。" />
+        <meta name="description" content="youtube(https://youtube.com)の動画をダウンロードできるサービスです。" />
         <title><?php echo $title_for_layout ?> - Export Youtube</title>
+        <meta property="og:site_name" content="Export Youtube" />
+        <meta property="og:title" content="Export Youtube" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://export-youtube.genzouw.com" />
+        <meta property="og:image" content="https://export-youtube.genzouw.com/img/thumbnail.jpg" />
+        <meta property="og:description" content="youtube(https://youtube.com)の動画をダウンロードできるサービスです。"/>
+        <meta property="og:locale" content="ja_JP" />
         <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -28,7 +35,6 @@
         ga('create', 'UA-41583079-2', 'auto');
         ga('require', 'displayfeatures');
         ga('send', 'pageview');
-
         </script>
         <?php
         echo $this->Html->meta('icon');
