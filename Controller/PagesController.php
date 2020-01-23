@@ -29,18 +29,20 @@ App::uses('AppController', 'Controller');
  */
 class PagesController extends AppController
 {
-    public $uses = array();
+    public $uses = [];
 
     private $youtubeDlCommandPath = 'youtube-dl';
 
     public function index()
     {
+        $saveFormat = 'mp4';
+
         $this->set('title_for_layout', 'Top');
 
         if ($this->request->is('post') && isset($this->request->data['url'])) {
             $url = $this->request->data['url'];
             $shellToGetFileName = sprintf(
-                "LANG=ja_JP.UTF-8 {$this->youtubeDlCommandPath} --get-filename -f mp4 '%s'",
+                "LANG=ja_JP.UTF-8 {$this->youtubeDlCommandPath} --get-filename -f {$saveFormat} '%s'",
                 $url
             );
 
@@ -51,7 +53,7 @@ class PagesController extends AppController
 
             if (!file_exists(APP . "webroot/downloads/{$fileName}")) {
                 $shell = sprintf(
-                    'cd ' . APP . "webroot/downloads/; LANG=ja_JP.UTF-8 {$this->youtubeDlCommandPath} -f mp4 '{$url}'; touch '{$fileName}';"
+                    'cd ' . APP . "webroot/downloads/; LANG=ja_JP.UTF-8 {$this->youtubeDlCommandPath} -f {$saveFormat} '{$url}'; touch '{$fileName}';"
                 );
                 exec($shell, $output, $returnValue);
 
