@@ -16,7 +16,12 @@ services:
     volumes:
       - $PWD:/var/www
     working_dir: /var/www
-    command: composer install; chmod -R 777 ./tmp; install -m 777 ./webroot/downloads
+    command: >
+      bash -c "
+      composer install;
+      chmod -R 777 ./tmp;
+      install -m 777 ./webroot/downloads
+      "
   db:
     image: mysql:5.7.29
     environment:
