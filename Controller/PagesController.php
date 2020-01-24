@@ -42,7 +42,7 @@ class PagesController extends AppController
         if ($this->request->is('post') && isset($this->request->data['url'])) {
             $url = $this->request->data['url'];
             $shellToGetFileName = sprintf(
-                "LANG=ja_JP.UTF-8 {$this->youtubeDlCommandPath} --get-filename -f {$saveFormat} '%s'",
+                "LANG=ja_JP.UTF-8 {$this->youtubeDlCommandPath} --get-filename --socket-timeout 15 --max-filesize 150m -f {$saveFormat} '%s'",
                 $url
             );
 
@@ -53,7 +53,7 @@ class PagesController extends AppController
 
             if (!file_exists(APP . "webroot/downloads/{$fileName}")) {
                 $shell = sprintf(
-                    'cd ' . APP . "webroot/downloads/; LANG=ja_JP.UTF-8 {$this->youtubeDlCommandPath} -f {$saveFormat} '{$url}'; touch '{$fileName}';"
+                    'cd ' . APP . "webroot/downloads/; LANG=ja_JP.UTF-8 {$this->youtubeDlCommandPath} --socket-timeout 15 --max-filesize 150m -f {$saveFormat} '{$url}'; touch '{$fileName}';"
                 );
                 exec($shell, $output, $returnValue);
 
