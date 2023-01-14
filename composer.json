@@ -1,7 +1,7 @@
 {
     "name": "root/cakephp",
     "require": {
-        "cakephp/cakephp": "2.10.19"
+        "cakephp/cakephp": "3.10.3"
     },
     "require-dev": {
         "piece/stagehand-testrunner": "4.1.*",
